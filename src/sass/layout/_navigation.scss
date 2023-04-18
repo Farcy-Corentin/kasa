@@ -1,0 +1,16 @@
+@import '../utils/variables';
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: $primary;
+}
+
+.nav-link--active {
+  text-decoration: underline;
+}

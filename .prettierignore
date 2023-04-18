@@ -1,4 +1,14 @@
 **/.git
 **/.svn
 **/.hg
-**/node_modules
+*.css
+*.scss
+README.md
+react-app-env.d.ts
+node_modules
+.eslintrc.json
+package.json
+pnpm-lock.yaml
+tsconfig.json
+public
+.prettierrc.json
