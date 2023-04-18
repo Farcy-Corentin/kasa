@@ -24,3 +24,5 @@ yarn-error.log*
 
 .idea
 .vscode
+
+react-app-env.d.ts

@@ -1,0 +1,13 @@
+@import '../utils/mixins';
+@import '../utils/breakpoints';
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px 0 16px 0;
+
+  @include mediaQuery(map-get($breakpoints, xl), min-width) {
+    margin: 40px 0 63px 0;
+  }
+}
