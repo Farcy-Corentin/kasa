@@ -6,7 +6,6 @@ interface BannerProps {
   preview: string
 }
 export const Banner = ({ children, preview }: BannerProps): JSX.Element => {
-  console.log('children', children)
   return (
     <div className="banner">
       <Image src={preview} alt={'preview image'} width={1240} height={223} />
