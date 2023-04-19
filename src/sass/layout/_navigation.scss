@@ -1,4 +1,6 @@
-@import '../utils/variables';
+@use '../utils/variables';
+@use '../utils/mixins';
+@use '../utils/breakpoints';
 
 nav {
   display: flex;
@@ -9,6 +11,11 @@ nav {
 .nav-link {
   text-decoration: none;
   color: $primary;
+  font-size: $font-size-nav-link--small;
+
+  @include mediaQuery(map-get($breakpoints, xl), min-width) {
+    font-size: $font-size-nav-link--large;
+  }
 }
 
 .nav-link--active {

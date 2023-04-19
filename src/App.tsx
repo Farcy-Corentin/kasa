@@ -3,7 +3,7 @@ import './sass/main.scss'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import { About } from './pages/About'
 import { Home } from './pages/Home'
-import { Properties } from './pages/Properties'
+import { Property } from './pages/Property'
 import { Layout } from './layout/Layout'
 
 const rooter = createBrowserRouter([
@@ -21,7 +21,7 @@ const rooter = createBrowserRouter([
       },
       {
         path: 'apartment/:id',
-        element: <Properties />,
+        element: <Property />,
       },
     ],
   },
