@@ -2,8 +2,10 @@
   margin: 0 auto;
   padding: 0 20px;
   max-width: 100%;
+}
 
-  @media (min-width: 1200px) {
+@include mediaQuery(map-get($breakpoints, lg), min-width) {
+  .container {
     padding: 0 100px;
   }
 }

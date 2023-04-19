@@ -1,5 +1,5 @@
 import { NavLink, Outlet } from 'react-router-dom'
-import { Container } from '../Ui/Container'
+import { Container } from '../ui/Container'
 
 export const Layout = (): JSX.Element => {
   return (
