@@ -17,7 +17,8 @@
     "@typescript-eslint/comma-dangle": "off",
     "@typescript-eslint/triple-slash-reference": "off",
     "@typescript-eslint/space-before-function-paren": "off",
-    "multiline-ternary": "off"
+    "multiline-ternary": "off",
+    "react/no-unescaped-entities": "off"
   },
   "settings": {
     "react": {

@@ -1,0 +1,56 @@
+.error-section {
+  display: flex;
+  flex-grow: 1;
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 133px;
+    align-items: center;
+    height: 100%;
+
+    .error-content {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 11px;
+
+      h1 {
+        color: $primary;
+        font-weight: bold;
+        font-size: 6rem;
+      }
+
+      p {
+        color: $primary;
+        font-size: $font-size-body--medium;
+        text-align: center;
+        line-height: 26px;
+      }
+    }
+
+    .nav-link {
+      font-size: $font-size-label--medium;
+    }
+  }
+
+  @include mediaQuery(map-get($breakpoints, xl), min-width) {
+    .container {
+      gap: 66px;
+
+      .error-content {
+        gap: 182px;
+
+        h1 {
+          font-size: 18rem;
+        }
+
+        p {
+          font-size: $font-size-title--medium;
+        }
+      }
+    }
+  }
+}
