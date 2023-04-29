@@ -5,7 +5,7 @@ import { ChevronUpIcon } from './ChevronUpIcon'
 
 interface CollapseProps {
   title: string
-  content: string
+  content: string | string[]
 }
 
 export const Collapse = ({ title, content }: CollapseProps): JSX.Element => {
@@ -42,7 +42,6 @@ export const Collapse = ({ title, content }: CollapseProps): JSX.Element => {
     setIsExpanded((prevState) => !prevState)
   }, [])
 
-  console.log('isExp', isExpanded)
   return (
     <div role="region" className="collapse" ref={collapseRef}>
       <button
@@ -60,7 +59,15 @@ export const Collapse = ({ title, content }: CollapseProps): JSX.Element => {
       </button>
       {isExpanded && (
         <div className="collapse-content">
-          <p>{content}</p>
+          {Array.isArray(content) ? (
+            <ul>
+              {content.map((item) => (
+                <li key={item}>{item}</li>
+              ))}
+            </ul>
+          ) : (
+            <p> {content} </p>
+          )}
         </div>
       )}
     </div>

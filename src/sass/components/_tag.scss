@@ -1,0 +1,13 @@
+.tag {
+  padding: 2px 30px;
+  background: $primary;
+  font-weight: 500;
+  color: $white;
+  border-radius: $border-radius;
+  font-size: 0.625rem;
+
+  @include mediaQuery(map-get($breakpoints, lg), min-width) {
+    padding: 4px 40px;
+    font-size: $font-size-label--medium;
+  }
+}
