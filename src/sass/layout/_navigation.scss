@@ -6,18 +6,22 @@ nav {
   display: flex;
   justify-content: space-between;
   gap: 10px;
-}
 
-.nav-link {
-  text-decoration: none;
-  color: $primary;
-  font-size: $font-size-nav-link--small;
+  .nav-link {
+    text-decoration: none;
+    color: $primary;
+    font-size: $font-size-nav-link--small;
+  }
+
+  .nav-link--active {
+    text-decoration: underline;
+  }
 
   @include mediaQuery(map-get($breakpoints, xl), min-width) {
-    font-size: $font-size-nav-link--large;
-  }
-}
+    gap: 57px;
 
-.nav-link--active {
-  text-decoration: underline;
+    .nav-link {
+      font-size: $font-size-nav-link--large;
+    }
+  }
 }

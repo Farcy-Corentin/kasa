@@ -1,5 +1,6 @@
 .collapse {
   width: 100%;
+  height: 100%;
   border-radius: $border-radius;
   background: $secondary;
 
@@ -21,7 +22,8 @@
     }
 
     svg {
-      width: 16px;
+      width: 18px;
+      height: 18px;
     }
   }
 
@@ -32,6 +34,14 @@
     background: $secondary;
     color: $primary;
     border-radius: $border-radius;
+
+    p {
+      line-height: 17px;
+    }
+
+    ul {
+      list-style: none;
+    }
   }
 }
 
@@ -49,6 +59,7 @@
 
       svg {
         width: 24px;
+        height: 24px;
       }
     }
 
