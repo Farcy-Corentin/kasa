@@ -1,0 +1,97 @@
+.property-section {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
+  .property-title {
+    color: $primary;
+    font-weight: 500;
+    font-size: 1.125rem;
+    margin-bottom: 5px;
+  }
+
+  .property-location {
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: $primary;
+    margin-bottom: 10px;
+  }
+
+  .property-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    width: 100%;
+    margin-bottom: 24px;
+  }
+
+  .property-wrapper {
+    display: flex;
+    flex-direction: column;
+
+    .property-host-rating-wrapper {
+      display: flex;
+      justify-content: space-between;
+      flex-direction: row-reverse;
+    }
+  }
+
+  .property-content {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 64px;
+    gap: 20px;
+
+    .collapse p, .collapse ul {
+      font-size: 0.75rem;
+      line-height: 17px;
+    }
+  }
+
+  @include mediaQuery(map-get($breakpoints, md), min-width) {
+    .property-title {
+      font-size: 2.25rem;
+      margin-bottom: 8px;
+    }
+
+    .property-location {
+      font-size: $font-size-body--medium;
+      color: $primary;
+      margin-bottom: 20px;
+    }
+
+    .property-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      width: 100%;
+      margin-bottom: 24px;
+    }
+
+    .property-wrapper {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      margin-bottom: 24px;
+
+      .property-host-rating-wrapper {
+        display: flex;
+        align-items: flex-end;
+        justify-content: flex-start;
+        flex-direction: column;
+      }
+    }
+
+    .property-content {
+      display: flex;
+      flex-direction: row;
+      margin-bottom: 14px;
+      gap: 76px;
+
+      .collapse p, .collapse ul {
+        font-size: $font-size-body--medium;
+        line-height: 26px;
+      }
+    }
+  }
+}

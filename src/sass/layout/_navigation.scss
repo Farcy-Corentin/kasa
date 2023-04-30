@@ -1,0 +1,27 @@
+@use '../utils/variables';
+@use '../utils/mixins';
+@use '../utils/breakpoints';
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+
+  .nav-link {
+    text-decoration: none;
+    color: $primary;
+    font-size: $font-size-nav-link--small;
+  }
+
+  .nav-link--active {
+    text-decoration: underline;
+  }
+
+  @include mediaQuery(map-get($breakpoints, xl), min-width) {
+    gap: 57px;
+
+    .nav-link {
+      font-size: $font-size-nav-link--large;
+    }
+  }
+}

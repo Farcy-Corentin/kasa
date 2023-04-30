@@ -1,0 +1,7 @@
+@mixin mediaQuery($value, $type: min-widht) {
+  $size: $value;
+
+  @media only screen and ($type: $size) {
+    @content;
+  }
+}

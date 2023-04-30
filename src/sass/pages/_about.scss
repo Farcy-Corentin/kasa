@@ -1,0 +1,10 @@
+.about-section {
+  display: flex;
+  flex-direction: column;
+  gap: 31px;
+  margin-bottom: 64px;
+
+  @include mediaQuery(map-get($breakpoints, md), min-width) {
+    margin-bottom: 14px;
+  }
+}

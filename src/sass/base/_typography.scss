@@ -1,0 +1,31 @@
+@import "../utils/variables";
+@import "../utils/mixins";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+}
+
+h1 {
+  font-size: $font-size-title--small;
+  font-weight: normal;
+  color: $white;
+}
+
+p {
+  font-size: $font-size-body--small;
+  line-height: $line-height-body--small;
+}
+
+@include mediaQuery(map-get($breakpoints, xl), min-width) {
+  h1 {
+    font-size: $font-size-title--large;
+    line-height: $line-height-title--large;
+  }
+
+  p {
+    font-size: $font-size-body--medium;
+    line-height: $line-height-body--medium;
+  }
+}
