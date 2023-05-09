@@ -16,5 +16,8 @@
 
   @include mediaQuery(map-get($breakpoints, xxl), min-width) {
     grid-template-columns: 1fr 1fr 1fr;
+    padding: 50px 56px;
+    background: #F6F6F6;
+    border-radius: 25px;
   }
 }
